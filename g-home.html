@@ -1,23 +1,373 @@
  <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>gifted universal</title></head>
-<body style="background-color: black;">
-<h1 style="text-align: center;color: white;font-family: Monospace ;">boys over flowers<h1/>
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/qtnziuju9WY">
-</iframe><br><br>
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/sfN7bCp33lQ">
-</iframe>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>receipt generator</title> 
+  <style>
+    body{
+      margin: 0;
+    }
+    
+       @keyframes hp{
+      0%{
+        margin-top: -4em;
+      }
+      
+      100%{
+        margin-top: -0.5em;
+        
+      }
+    }
+    
+        @keyframes sh{
+      0%{
+        transform: rotate(0deg);
+      }
+      
+      50%{
+        transform: rotate(-3deg);
+        
+      }
+      
+      100%{
+        transform: rotate(3deg);
+        
+      }
+    }
+    
+    .box3{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .ads{
+      width: 22em;
+      height: 4em;
+      border: 1px solid lightgrey;
+      border-radius: 0.5em;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(360deg, White, ghostwhite );
+    }
+    
+    .ADS{
+      border: 1px solid lightgray;
+      border-top: none;
+      border-left: none;
+      display: inline-block;
+      border-radius: 0em 0em 0.5em 0em;
+      color: gray;
+      height: 1.2em;
+    }
+    
+    .box1{
+      display: flex;
+    }
+    
+    .can{
+      color: gray;
+      font-size: 1.2em;
+      margin-left: 0.4em;
+      height: 1.2em;
+    }
+    
+    .Ads{
+      width: 22em;
+      height: 4.3em;
+      border: 1px solid lightgrey;
+      border-radius: 0.5em;
+      background-color: whitesmoke;
+      position: relative;
+      z-index: 0;
+      margin-top: -0.5em;
+      animation: hp 1s 3s;
+      
+    }
+    
+    .name{
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 0.5em;
+    }
+    
+    .dd{
+      width: 6em;
+      height: 2.5em;
+      background: linear-gradient(150deg, orange,darkorange );
+      margin: auto;
+      text-align: center;
+      border-radius: 0.5em;
+      font-weight: 1000;
+      text-transform: capitalize;
+      font-family: cursive;
+      animation: sh 0.1s 3s infinite;
+    }
+    
+   .box{
+     width: 22em;
+     height: 22em;
+     border: 1px solid lightgray;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 0.5em;
+   }
+   
+   .bx{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .box h2{
+     text-align: center;
+     text-transform: capitalize;
+     color: gray;
+     font-family: cursive;
+   }
+   
+   .box input{
+     width: 22em;
+     height: 3.5em;
+     margin: 0.5em;
+     border-radius: 0.5em;
+     border: 1px solid lightgray;
+     background-color: whitesmoke;
+     outline: none;
+     padding-left: 1em;
+     box-sizing: border-box;
+   }
+   
+   .box button{
+     width: 22em;
+     height: 3.5em;
+     margin: 0.5em;
+     background-color: dodgerblue;
+     color: white;
+     border: none;
+     border-radius: 0.5em;
+     position: relative;
+     overflow: hidden;
+     transition: all 0.5s;
+     font-weight: 700;
+   }
+   
+   .box button:after{
+     content: "";
+     width: 1em;
+     height: 1em;
+     background-color: rgba(255, 255, 255, 0);
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     
+     
+   }
+   
+   .box button:active:after{
+     background-color: rgba(255, 255, 255, 0.5);
+     width: 100%;
+     height: 4em;
+     transition: all 0.1s;
+   }
+   
+     .box2{
+    width: 21em;
+    height: 25em;
+    border: 1px solid silver;
+    border-radius: 2em;
+    box-shadow: 0em 0em 1em black, 0em 0em 5em gray;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+  }
+  
+  img{
+    width: 5em;
+    height: 5em;
+    filter: hue-rotate(45deg);
+    margin-bottom: 1em;
+  }
+  
+  .v2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 
-<br><br>
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/sdf5oaCPLK0">
-</iframe>
+    
+  }
+  
+  .v2 p{
+    margin: 0;
+  }
+  
+  .v2 p:first-child{
+    font-weight: 300;
+    margin-left: 0.5em;
+  }
+  
+  .v2 p:last-child{
+    margin-right: 0.5em;
+  }
+  
+  .v1{
+    margin-top: 1em;
+  }
+  
+  .box2 h2{
+    color: dodgerblue;
+  }
+  
+  .v3{
+    margin-top: 2em;
+   
+  }
+  
+  .v3 button{
+    width: 5em;
+    height: 2em;
+    background-color: dodgerblue;
+    color: white;
+    margin: 0em 1em 0em 1em;
+    border: none;
+    font-weight: 600;
+  }
+  
+  .ped{
+    color: red;
+    font-weight: 700;
+  }
 
+  .amt{
+  color: green;
+  font-weight: 700;
+}
 
+   .v6{
+     font-weight: 400!important;
+   }
+   
+   #address{
+     overflow: hidden;
+     width: 70%;
+     text-align: right;
+   }
+   
+   #demo{
+     text-transform: capitalize;
+   }
+   
+   #id{
+     font-weight: 700;
+   }
+  </style>
+</head>
+
+<body>
+  <div class="box3" id="box3">
+  <div class="ads"><div class="box1">
+    <div class="ADS">Ads</div>
+    <audio autoplay controls muted>
+      <source src="/Over_Load_-By-_-Clever-Boy.mp3" type="audio/mp3">
+    </audio>
+    <div class="can" onclick="cancel()">×</div>
+    </div>
+  </div>
+          <div class="Ads" onclick="document.location = 'https://audiomack.com/clever-boy-64/song/overload'">
+            <div class="name">overload by clever boy</div><div class="dd">download on <br>audio mack</div>
+          </div>
+</div>
+
+<div class="bx">
+  <div class="box" id="box">
+    <h2>payment receipt for Brazil</h2>
+    <input type="text" id="email" placeholder="Enter Email Or Number">
+    <input type="tel"  id="number" placeholder="Enter Amount">
+    <button onclick="gen()">Generate</button>
+      <p id="demo"></p>
+  </div>
+  
+    <div class="box2" id="box2">
+      <h2>recibo de pagamento</h2>
+      <img src="/Screenshot_20230915-132720~2.jpg" alt="Nick icon">
+      <div class="v2"><p>tipo de pagamento:</p> <p>giveaway</p></div>
+        <div class="v2"><p>banco:</p> <p>pix</p></div>
+          <div class="v2"><p>enviar para:</p> <p id="address"></p></div>
+            <div class="v2"><p>status:</p> <p class="ped">pendente...</p></div>
+            
+            <div class="v2 v1"><p class="v6">Quantia:</p> <p class="amt" id="amount"></p></div>
+            <div class="v2"><p class="v6">ID da transação:</p> <p id="id"></p></div>
+            <div class="v3"><button>imprimir</button> <button>fechar</button></div>
+    </div>
+    
+  </div>
+  
+  
+
+<script>
+  let demo = document.getElementById('demo');
+  let email = document.getElementById('email');
+  let number = document.getElementById('number');
+  let box = document.getElementById('box');
+  let id = document.getElementById('id');
+  let amount = document.getElementById('amount');
+  let address = document.getElementById('address');
+  let box2 = document.getElementById('box2');
+  let box3 = document.getElementById('box3');
+  function cancel(){
+    box3.style.display = 'none';
+  }
+  
+  function gen(){
+    box.style.display = 'none';
+    box2.style.display = 'flex';
+    amount.innerHTML = 'R$' + number.value;
+    address.innerHTML = email.value;
+    id.innerHTML = Math.floor(Math.random()*99999999999999) + 1 + "...";
+    
+     if(email.value == "" && number.value == ""){
+      demo.innerHTML = "please fill up both inputs!";
+      box.style.display = 'flex';
+    box2.style.display = 'none';
+    email.style.outline = '1px solid red';
+    number.style.outline = '1px solid red';
+    demo.style.color = "red";
+    }
+    
+    else if(email.value == ""){
+      demo.innerHTML = "please input email!";
+      box.style.display = 'flex';
+    box2.style.display = 'none';
+    email.style.outline = '1px solid red';
+    number.style.outline = 'none';
+    demo.style.color = "red";
+    }
+    
+    else if(number.value == ""){
+      demo.innerHTML = "please input amount!";
+      box.style.display = 'flex';
+    box2.style.display = 'none';
+    email.style.outline = 'none';
+    number.style.outline = '1px solid red';
+    demo.style.color = "red";
+    }
+    
+    
+  }
+</script>
 </body>
-</html>
 
+ </html>
