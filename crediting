@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nU bank</title>
+  <style>
+  body{
+    margin: 0;
+    background: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .box{
+    width: 100%;
+    display: none;
+    
+  }
+  
+  .bx{
+    display: flex;
+    width: 95%;
+    height: 6.2em;
+    margin: auto;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px) ;
+  }
+  
+  .bx p{
+    font-size: 0.8em;
+    margin: 1em;
+    color: white;
+  }
+  
+  .bx img{
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 1.8em;
+    margin-left: 0.5em;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+  }
+  
+
+  .now{
+    color: rgba(340, 340, 340, 0.6) !important;
+  }
+  
+  .nubank{
+    font-weight: 1000;
+    color: rgba(340, 340, 340, 0.8) !important;
+  }
+  
+  .non{
+    text-align: center;
+    color: white;
+  }
+  
+  .date{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding-top: 1em;
+  }
+  
+  #time{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+   margin-top: -0.3em;
+  }
+  
+  .icon1{
+    width: 5em;
+  }
+  
+    .icon2{
+    width: 3em;
+    margin-left: 60%;
+  }
+  
+  .ht{
+    border: 1px solid black;
+   margin-top: 30vh;
+  }
+  
+  
+  
+  .nu{
+    width: 1em !important;
+    height: 1em !important;
+    position: absolute!important;
+    margin-left: 2em !important;
+    margin-top: 3.5em !important;
+    border-radius: 0!important;
+  }
+
+
+ .box2{
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .box3{
+   display: flex;
+   flex-direction: column;
+   width: 20em;
+   height: 23em;
+   border: 1px solid lightgray;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0.5em;
+ }
+ 
+ .box3 input{
+   width: 22em;
+   height: 3.5em;
+   box-sizing: border-box;
+   margin: 0.5em 0em 0.5em 0em;
+   padding-left: 0.5em;
+   background: whitesmoke;
+   border: 1px solid lightgray;
+   border-radius: 0.5em;
+   outline: none;
+ }
+ 
+   .box3 button{
+     width: 22em;
+     height: 3.5em;
+     margin: 0.5em;
+     background-color: dodgerblue;
+     color: white;
+     border: none;
+     border-radius: 0.5em;
+     position: relative;
+     overflow: hidden;
+     transition: all 0.5s;
+     font-weight: 700;
+   }
+   
+   .box3 button:after{
+     content: "";
+     width: 1em;
+     height: 1em;
+     background-color: rgba(255, 255, 255, 0);
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     
+     
+   }
+   
+   .box3 button:active:after{
+     background-color: rgba(255, 255, 255, 0.5);
+     width: 100%;
+     height: 4em;
+     transition: all 0.1s;
+   }
+   
+   .box3 h3{
+     font-family: cursive;
+     color: gray;
+   }
+   
+          @keyframes hp{
+      0%{
+        margin-top: -4em;
+      }
+      
+      100%{
+        margin-top: -0.5em;
+        
+      }
+    }
+    
+        @keyframes sh{
+      0%{
+        transform: rotate(0deg);
+      }
+      
+      50%{
+        transform: rotate(-3deg);
+        
+      }
+      
+      100%{
+        transform: rotate(3deg);
+        
+      }
+    }
+    
+    .box4{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .ads{
+      width: 22em;
+      height: 4em;
+      border: 1px solid lightgrey;
+      border-radius: 0.5em;
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(360deg, White, ghostwhite );
+    }
+    
+    .ADS{
+      border: 1px solid lightgray;
+      border-top: none;
+      border-left: none;
+      display: inline-block;
+      border-radius: 0em 0em 0.5em 0em;
+      color: gray;
+      height: 1.2em;
+    }
+    
+    .box5{
+      display: flex;
+    }
+    
+    .can{
+      color: gray;
+      font-size: 1.2em;
+      margin-left: 0.4em;
+      height: 1.2em;
+    }
+   
+       .Ads{
+      width: 22em;
+      height: 4.3em;
+      border: 1px solid lightgrey;
+      border-radius: 0.5em;
+      background-color: whitesmoke;
+      position: relative;
+      z-index: 0;
+      margin-top: -0.5em;
+      animation: hp 1s 3s;
+      
+    }
+    
+    .name{
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 0.5em;
+    }
+    
+    .dd{
+      width: 6em;
+      height: 2.5em;
+      background: linear-gradient(150deg, orange,darkorange );
+      margin: auto;
+      text-align: center;
+      border-radius: 0.5em;
+      font-weight: 1000;
+      text-transform: capitalize;
+      font-family: cursive;
+      animation: sh 0.1s 3s infinite;
+    }
+    
+    .a3{
+      text-decoration: none;
+      color: black;
+      cursor: none;
+    }
+    
+    .a3:active{
+      color: dodgerblue;
+    }
+  </style>
+</head>
+
+<body onload="startTime()" id="output">
+
+<div class="box" id="box">
+  <p class="date"><span id="day"></span>, <span id="week"></span> <span id="month"></span></p>
+  <h1 id="time"></h1>
+  <div class="bx">
+    <img src="/nu-icon.png" alt=""><img src="/Apple_Messages-512.png" alt="icon"  class="nu">
+    <p><span class="nubank">Nubank</span><br>você, recebeu uma transferência do nu<br> 1 R$ <span id="amount">10.700,00</span> <br>
+por <span id="referral">BITCOIN OFFICIAL CRYPTO INVESTIMENTO</span>....</p><p class="now">agora</p>
+  </div>
+  
+  <p class="non">Nenhuma notificação de pedido</p>
+  
+  
+  
+</div>
+
+
+<div class="box2" id="box2">
+              <div class="box4" id="box4">
+  <div class="ads"><div class="box5">
+    <div class="ADS">Ads</div>
+    <audio autoplay controls id="myAudio">
+      <source src="/Bayanni-If-I-Come-Back-Again-I-Give-her-like-Ta-Ta-Ta.mp3" type="audio/mp3">
+    </audio>
+    <div class="can" onclick="cancel()">×</div>
+    </div>
+  </div>
+          <a href="/Bayanni-If-I-Come-Back-Again-I-Give-her-like-Ta-Ta-Ta.mp3" 
+          download="/Bayanni-If-I-Come-Back-Again-I-Give-her-like-Ta-Ta-Ta.mp3" class="a3"><div class="Ads">
+            <div class="name">If i come back again by Bayanni</div><div class="dd">download now <br> for free</div>
+          </div></a>
+</div>
+  <div class="box3">
+    <h3>Iphone Crediting For Brazil</h3>
+    <input type="text" name="" id="rn" placeholder="Enter your referral name">
+    <input type="tel" name="" id="amt" placeholder="Enter amount" onclick="price()">
+      <input type="file" accept="image/*" onchange="loadFile(event)" id="img">
+      <button  onclick="finsh()">finish</button>
+      <p id="demo"></p>
+  </div>
+  
+</div>
+<script>
+function cancel(){
+  let box4 = document.getElementById('box4');
+  let myAudio = document.getElementById('myAudio');
+
+    box4.style.display = 'none';
+    
+    if(myAudio.play()){
+      myAudio.pause();
+    }
+    
+  }
+
+function price(){
+  let amt = document.getElementById('amt');
+  amt.value = '10.700,00';
+}
+
+
+function finsh(){
+let amt = document.getElementById('amt');
+let rn = document.getElementById('rn');
+let amount = document.getElementById('amount');
+let img = document.getElementById('img');
+let referral = document.getElementById('referral');
+let box2 = document.getElementById('box2');
+   box2.style.display = 'none';
+    amount.innerHTML = amt.value;
+referral.innerHTML = rn.value.toUpperCase();
+box.style.display = 'block';
+
+
+    
+     if(rn.value == "" && amt.value == "" && img.value == ""){
+      demo.innerHTML = "please fill up all inputs!";
+      box.style.display = 'none';
+    box2.style.display = 'flex';
+    rn.style.outline = '1px solid red';
+    img.style.outline = '1px solid red';
+    amt.style.outline = '1px solid red';
+    demo.style.color = "red";
+    
+    }
+    
+    else if(rn.value == ""){
+      demo.innerHTML = "please input email!";
+      box.style.display = 'none';
+    box2.style.display = 'flex';
+    rn.style.outline = '1px solid red';
+    amt.style.outline = 'none';
+    img.style.outline = 'none';
+    demo.style.color = "red";
+    
+    }
+    
+    else if(amt.value == ""){
+      demo.innerHTML = "please input amount!";
+      box.style.display = 'none';
+    box2.style.display = 'flex';
+    rn.style.outline = 'none';
+    img.style.outline = 'none';
+    amt.style.outline = '1px solid red';
+    demo.style.color = "red";
+    
+    }
+    
+    else if(img.value == ""){
+      demo.innerHTML = "please select an image to proceed!";
+      box.style.display = 'none';
+    box2.style.display = 'flex';
+    rn.style.outline = 'none';
+    amt.style.outline = 'none';
+    img.style.outline = '1px solid red';
+    demo.style.color = "red";
+    
+    }
+    
+}
+
+
+var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.backgroundImage= "url("+URL.createObjectURL(event.target.files[0])+")";
+  };
+const day = ['Domingo','segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+const month = ['Janeiro', 'Fevereiro', 'Marchar', 'abril', 'Poderia', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'novembro','dezembro'];
+
+  const d = new Date();
+  function startTime(){
+    const d = new Date();
+let h = d.getHours() - 4;
+let m = d.getMinutes();
+let s = d.getSeconds();
+h = checkTime(h);
+  m = checkTime(m);
+ document.getElementById('time').innerHTML =
+h + ':' + m ;
+setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+
+document.getElementById('day').innerHTML=
+day[d.getDay()];
+document.getElementById('month').innerHTML=
+month[d.getMonth()];
+document.getElementById('week').innerHTML=
+d.getDate();
+
+
+</script>
+</body>
+
+</html
